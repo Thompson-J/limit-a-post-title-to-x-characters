@@ -3,9 +3,10 @@
 Plugin Name: Limit a Post Title to X Characters
 Plugin URI: http://pasunecompagnie.com/limit-a-post-title-to-x-characters/
 Description: Limit posts title length as defined in options. Shows the current character count and stops the publication process if the length goes over.
-Version: 1.3.1
+Version: 1.4
 Author: Jean-Philippe Murray
 Author URI: http://jpmurray.net/
+Contributors: thompsonj
 */
 
 /*  Copyright 2012 Jean-Philippe Murray (email : himself@jpmurray.net)
@@ -108,10 +109,7 @@ function lptx_counter()
 	<div id="lptx-container">
 		<input type="hidden" id="lptx_maximum" value="<?php echo $options['char_limit']; ?>"/>
 		<div id="lptx-counter" class="post-title-count <?php echo lptx_returnClassMaximum($options['char_limit']); ?>"><?php echo lptx_getTitleLength(); ?></div>
-        <div id="lptx-counter-available"> <?php _e('of','lptx'); ?> <?php echo $options['char_limit']; ?></div>
-		<div id="lptx-clear">
-			<br /><br /><a id="empty-title" href="#"><?php _e('Clear the title field','lptx'); ?></a>
-		</div>
+  	<div id="lptx-counter-available"> <?php _e('of','lptx'); ?> <?php echo $options['char_limit']; ?></div>
 	</div>
 	<?php
 }

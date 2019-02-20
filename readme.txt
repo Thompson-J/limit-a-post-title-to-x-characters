@@ -1,16 +1,16 @@
 === Limit a post title to X characters ===
-Contributors: jpmurray
+Contributors: jpmurray, thompsonj
 Donate link: http://pasunecompagnie.com/limit-a-post-title-to-x-characters/
 Tags: post title, title, count, counter, twitter
-Requires at least: 3.0
-Tested up to: 3.3.1
-Stable tag: 1.3.1
+Requires at least: 5.0
+Tested up to: 5.0.3
+Stable tag: 1.4
 
 == Description ==
 
 Limit posts title length as defined in options. Shows the current character count and stops the publication process if the length goes over.
 
-Usefull to limit title characters dues to theme restrictions, or Twitter automatic posting, for examples.
+Useful to limit title characters dues to theme restrictions, or Twitter automatic posting, for examples.
 
 Included in the plugin folders are necessary files to translate this plugin to you own language. If you want to send me a translation, please contact me via the URL below.
 
@@ -20,6 +20,7 @@ I can provide limited support <a href="http://pasunecompagnie.com/limit-a-post-t
 
 Thanks to...
 
+* [Josh Thompson](http://josh-thompson.com) *for adding WordPress 5 compatability.*
 * [Paul Solomon](http://InsiteWebsite.com/) *for tweaking the CSS and correcting some of my typos and spelling mistakes; finding that the scripts where loading in the front end too.*
 * [marklaramee](http://wordpress.org/support/profile/marklaramee) *for the bug hunt in the character count validation.*
 * [Gabriel Serafini](http://wordpress.org/support/profile/gserafini) *for debugging character count validation in post edition.*
@@ -32,6 +33,12 @@ Install this plugin by going to Plugins >> Add New >> and type this plugin's nam
 
 
 == Changelog ==
+
+= 1.4 =
+* Bug fix: Incompatiblity with WordPress 5 is fixed.
+* Bug fix: Check the length of titles when drafts are opened.
+* Removed: Clear the title field button in editor.
+* Added: Popup when the title is over limit. Disable the update/publish button.
 
 = 1.3.1 =
 * Bug fix: Custom javascript where loading in the front end pages as well, and it was not needed.
